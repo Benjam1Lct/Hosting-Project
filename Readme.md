@@ -1,0 +1,1 @@
+Mindmap: https://miro.com/welcomeonboard/NDk2UlM5OHhXU1pOdjhDM3dTSkRoM1ZVWU1aYzhuMG8yT21vU3FiZEpYY212SzBHREhYcmdaVWVaNFlQYXN5MnwzNDU4NzY0NTQyMjY1MjY2MDc3fDI=?share_link_id=424220112252
