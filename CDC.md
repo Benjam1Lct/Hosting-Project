@@ -3,4 +3,111 @@ https://www.mobizel.com/exemple-de-cahier-des-charges-dapplication/
 https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-application-mobile/#CDC
 https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
 
-qdfgqdf
+# Projet NSI Term Fighting Game 
+
+## Introduction:
+- version du projet
+- sommaire (permet la navigation dans le cdc)
+- lexique (definir les termes technique nouveau abordé dans le projet)
+
+## Contexte du projet:
+- Presentation de l'entreprise (fictive à creer) 
+- les objectifs du projet 
+- les cibleqs du projets 
+- les interfaces existantes 
+- concurences 
+
+## Presentation du projet:
+- Platformes de diffusion (ios, android, web)
+- Equipement de diffusion (smartphone, tablette), format des devices
+- Modele economique: application gratuite
+- resultat attendu: produit fini à mettre sur le marché
+
+# La description du projet:
+## description fonctionnelle:
+
+- le parcours 
+- les fonctionnalités 
+    - compte utilisateur 
+        - email
+        - Facebook
+        - Google
+        - N° de téléphone 
+    - Accès sans connexion au contenu, ou restriction de contenu 
+    - Importation ou exportation 
+        - de photos, 
+        - de vidéos 
+    - Messagerie 
+        - Texte 
+        - Photos,
+        - Vidéos 
+        - Son 
+    - Interagir avec le contenu 
+        - commenter 
+        - liker
+        - partager
+        - mettre en favori 
+    - inviation d'amis 
+    - Localisation, cartographie 
+    - scan de QRcode  
+    - connexion à un appareil en bluetooth,
+    - Système de paiement 
+        - CB 
+        - paypal
+        - Apple pay 
+        - Google wallet 
+    - Code Promo 
+    - Moteur de recherche, filtre,
+    - Agenda, rappel,
+    - Notifications push, email
+    - Hors-ligne : certains fonctionnalités doivent-elles être accessible hors-ligne ?
+    - ...   
+
+# Contraintes technique ou spécificités non-fonctionnelles
+Connection aux services tiers:
+- base de donnée (MySQL)
+- compatibilité:
+    - site accessible de partout
+    - jeu executable sur windows seulement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
