@@ -24,9 +24,11 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
 - resultat attendu: produit fini à mettre sur le marché
 
 # La description du projet
-- Le projet s'appui sur deux system distinct qui ont pour objectif de communiquer entre eux par l'intermadiaire d'une base de donnée.
+Le projet s'appui sur deux system distinct qui ont pour objectif de communiquer entre eux par l'intermadiaire d'une base de donnée.
 
-## description fonctionnelle
+## description fonctionnelle (fonctionnalitées apportées à l'utilisateur)
+
+- le parcours utilisateur (cf schema parcours utilisateur)
 
 ## le parcours 
 - les fonctionnalités 
