@@ -26,7 +26,7 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
 # La description du projet:
 ## description fonctionnelle:
 
-- le parcours 
+### le parcours 
 - les fonctionnalités 
     - compte utilisateur 
         - email
@@ -55,13 +55,12 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
         - CB 
         - paypal
         - Apple pay 
-        - Google wallet 
-    - Code Promo 
-    - Moteur de recherche, filtre,
-    - Agenda, rappel,
-    - Notifications push, email
+        - Google wallet
+        - Samsung Wallet
+    - Code Promo
+        - HELLO23
     - Hors-ligne : certains fonctionnalités doivent-elles être accessible hors-ligne ?
-    - ...   
+        - mode Guest jouable contre bot
 
 # Contraintes technique ou spécificités non-fonctionnelles
 Connection aux services tiers:
