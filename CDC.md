@@ -24,6 +24,7 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
 - resultat attendu: produit fini à mettre sur le marché
 
 # La description du projet
+- Le projet s'appui sur deux system distinct qui ont pour objectif de communiquer entre eux par l'intermadiaire d'une base de donnée.
 
 ## description fonctionnelle
 
@@ -35,8 +36,8 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
         - Google
         - N° de téléphone 
     - Accès sans connexion au contenu, ou restriction de contenu 
-    - Importation ou exportation 
-        - de photos, 
+    - Importation ou exportation sur le site (pdp de l'utilisateur)
+        - de photos
         - de vidéos 
     - Messagerie 
         - Texte 
@@ -48,10 +49,9 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
         - liker
         - partager
         - mettre en favori 
-    - inviation d'amis 
+    - inviation d'amis
     - Localisation, cartographie 
-    - scan de QRcode  
-    - connexion à un appareil en bluetooth,
+    - scan de QRcode
     - Système de paiement 
         - CB 
         - paypal
