@@ -5,28 +5,29 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
 
 # Projet NSI Term Fighting Game 
 
-## Introduction:
+## Introduction
 - version du projet
 - sommaire (permet la navigation dans le cdc)
 - lexique (definir les termes technique nouveau abordé dans le projet)
 
-## Contexte du projet:
+## Contexte du projet
 - Presentation de l'entreprise (fictive à creer) 
 - les objectifs du projet 
 - les cibleqs du projets 
 - les interfaces existantes 
 - concurences 
 
-## Presentation du projet:
+## Presentation du projet
 - Platformes de diffusion (ios, android, web)
 - Equipement de diffusion (smartphone, tablette), format des devices
 - Modele economique: application gratuite
 - resultat attendu: produit fini à mettre sur le marché
 
-# La description du projet:
-## description fonctionnelle:
+# La description du projet
 
-### le parcours 
+## description fonctionnelle
+
+## le parcours 
 - les fonctionnalités 
     - compte utilisateur 
         - email
@@ -63,7 +64,8 @@ https://www.lafabriquedunet.fr/blog/exemple-cahier-des-charges-site-internet/
         - mode Guest jouable contre bot
 
 # Contraintes technique ou spécificités non-fonctionnelles
-Connection aux services tiers:
+
+## Connection aux services tiers
 - base de donnée (MySQL)
 - compatibilité:
     - site accessible de partout
