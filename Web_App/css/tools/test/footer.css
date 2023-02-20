@@ -1,0 +1,31 @@
+@import "tools/font.css";
+/*
+Vla
+Tex\Web_App\html\
+Tex-Bold
+*/
+
+.footer {
+    display: block;
+    position: absolute;
+    bottom: -37vh;
+    width: 99%;
+    height: auto;
+    
+}
+
+.middle-line-footer {
+    border: 1.5px solid #EADAC2;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#EADAC2;
+    font-family: Tex;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}

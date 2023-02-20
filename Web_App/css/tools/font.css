@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Vla;
+    src: url(vlaanderen/VlaanderenChiseledNF.ttf)
+}
+
+@font-face {
+    font-family: Tex;
+    src: url(tex-gyre-adventor/texgyreadventor-regular.otf);
+}
+
+@font-face {
+    font-family: Tex-Bold;
+    src: url(tex-gyre-adventor/texgyreadventor-bold.otf);
+    font-weight: bold;
+}
