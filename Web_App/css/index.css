@@ -1,0 +1,109 @@
+.body {
+    position: absolute;
+height: 1000px;
+left: 0%;
+right: 0%;
+top: 80px;
+}
+
+.box {
+    position: absolute;
+width: 730px;
+height: 730px;
+left: calc(50% - 730px/2);
+top: calc(50% - 730px/2);
+
+}
+
+.circle1 {
+    box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 4px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.circle2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 10.96%;
+    right: 10.96%;
+    top: 10.96%;
+    bottom: 10.96%;
+    
+    border: 4px dashed #D6DDEC;
+    border-radius: 100%;
+}
+
+.circle3 {
+    box-sizing: border-box;
+
+position: absolute;
+left: 15.07%;
+right: 15.07%;
+top: 15.07%;
+bottom: 15.07%;
+
+border: 4px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.circle4 {
+    box-sizing: border-box;
+
+position: absolute;
+left: 26.03%;
+right: 26.03%;
+top: 26.03%;
+bottom: 26.03%;
+
+border: 4px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.circle5 {
+    box-sizing: border-box;
+
+position: absolute;
+left: 27.4%;
+right: 27.4%;
+top: 27.4%;
+bottom: 27.4%;
+
+border: 4px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.header {
+    position: absolute;
+height: 80px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+background: #D6DDEC;
+}
+
+.title {
+    position: absolute;
+width: 255px;
+height: 140px;
+left: calc(50% - 255px/2 - 0.5px);
+top: calc(50% - 140px/2);
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 140px;
+/* identical to box height */
+
+text-decoration: none;
+color: #D6DDEC;
+}
