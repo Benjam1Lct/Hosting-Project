@@ -1,0 +1,128 @@
+.header {
+    position: absolute;
+height: 80px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+background: #D6DDEC;
+}
+
+.title-header {
+    position: absolute;
+width: 75px;
+height: 52px;
+left: 160px;
+top: 14px;
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+
+text-decoration: none;
+color: #040B11;
+}
+
+.header-link {
+    position: absolute;
+width: 308px;
+height: 28px;
+left: calc(50% - 308px/2);
+top: 26px;
+}
+
+.content-link {
+    position: absolute;
+width: 85px;
+height: 28px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+text-decoration: none;
+color: #040B11;
+}
+
+.download-link {
+    position: absolute;
+width: 107px;
+height: 28px;
+left: 115px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+text-decoration: none;
+color: #040B11;
+}
+
+.profil-link {
+    position: absolute;
+width: 56px;
+height: 28px;
+left: 252px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+text-decoration: none;
+color: #040B11;
+}
+
+.reseaux {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 135px;
+height: 37px;
+right: 160px;
+top: 21px;
+
+}
+
+.insta {
+    width: 37px;
+    height: 37px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.facebook {
+    width: 37px;
+    height: 37px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.twitter {
+    width: 37px;
+    height: 37px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

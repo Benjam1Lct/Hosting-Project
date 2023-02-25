@@ -1,9 +1,11 @@
 .body {
     position: absolute;
-height: 1000px;
-left: 0%;
-right: 0%;
-top: 80px;
+    height: 849px;
+    left: 0%;
+    right: 0%;
+    top: 80px;
+
+    background: url(../assets/background/background-index.png);
 }
 
 .box {
@@ -78,16 +80,6 @@ bottom: 27.4%;
 
 border: 4px solid #D6DDEC;
 border-radius: 100%;
-}
-
-.header {
-    position: absolute;
-height: 80px;
-left: 0%;
-right: 0%;
-top: 0px;
-
-background: #D6DDEC;
 }
 
 .title {

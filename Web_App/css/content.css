@@ -1,0 +1,242 @@
+.body {
+    position: absolute;
+    height: 3680px;
+    left: 0%;
+    right: 0%;
+    top: 80px;
+
+    background: url(../assets/background/background-content.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content {
+    position: absolute;
+width: 675px;
+height: 270px;
+left: calc(50% - 675px/2);
+top: 200px;
+
+}
+
+.game-content-circle {
+    position: absolute;
+width: 270px;
+height: 270px;
+left: calc(50% - 270px/2 - 201.85px);
+top: 0px;
+}
+
+.circle-1 {
+    box-sizing: border-box;
+
+position: absolute;
+width: 269.75px;
+height: 269.75px;
+left: calc(50% - 269.75px/2 - 0.12px);
+top: calc(50% - 269.75px/2 - 0.12px);
+
+border: 2.65764px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.circle-2 {
+    position: absolute;
+width: 233.21px;
+height: 233.21px;
+left: calc(50% - 233.21px/2 - 0.46px);
+top: calc(50% - 233.21px/2 - 0.46px);
+
+background: rgba(214, 221, 236, 0.5);
+border-radius: 100%;
+}
+
+.game-content-text {
+    position: absolute;
+width: 354px;
+height: 150px;
+left: calc(50% - 354px/2 + 160.15px);
+top: 0px;
+}
+
+.game-content-text-title {
+    position: absolute;
+width: 268px;
+height: 76px;
+left: calc(50% - 268px/2 - 43px);
+top: calc(50% - 76px/2 - 87.5px);
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 70px;
+
+color: #D6DDEC;
+}
+
+.game-content-text-subtitle {
+    position: absolute;
+width: 354px;
+height: 175px;
+left: calc(50% - 354px/2);
+top: calc(50% - 175px/2 + 70px);
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+text-align: justify;
+
+color: #D6DDEC;
+
+}
+
+.team-content {
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 96px 96px 96px 96px;
+gap: 20px;
+
+position: absolute;
+height: auto;
+left: 0%;
+right: 0%;
+top: calc(50% - 890px/2 - 750px);
+
+background: rgba(214, 221, 236, 0.7);
+border-radius: 45px;
+}
+
+.team-content-title {
+    width: auto;
+height: 0px;
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 93px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+
+color: #1E2B2F;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.team-content-subtitle {
+    width: 100%;
+height: auto;
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 61px;
+text-align: justify;
+
+color: #1E2B2F;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.lore-content-1 {
+    position: absolute;
+width: 710px;
+height: 696px;
+left: calc(50% - 710px/2);
+top: 1912px;
+}
+
+.lore-content-1-top {
+    position: absolute;
+width: 710px;
+height: 352px;
+left: 0px;
+top: 0px;
+
+}
+
+.lore-content-1-bottom {
+    position: absolute;
+height: 260px;
+left: 2.54%;
+right: 0%;
+top: 384px;
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+text-align: justify;
+
+color: #FFFFFF;
+
+}
+
+.lore-content-1-circle {
+    position: absolute;
+width: 352px;
+height: 352px;
+left: 0px;
+top: 0px;
+
+}
+
+.lore-content-1-circle-1 {
+    box-sizing: border-box;
+
+position: absolute;
+width: 316px;
+height: 316px;
+left: 18px;
+top: 18px;
+
+border: 4px solid #D6DDEC;
+border-radius: 100%;
+}
+
+.lore-content-1-circle-2 {
+    position: absolute;
+width: 351px;
+height: 351px;
+left: 0px;
+top: 0px;
+
+background: rgba(214, 221, 236, 0.5);
+border-radius: 100%;
+}
+
+.lore-content-1-title {
+    position: absolute;
+width: 344px;
+height: 93px;
+left: 374px;
+top: 129px;
+
+font-family: 'TeX Gyre Adventor';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 93px;
+
+color: #FFFFFF;
+}
