@@ -1,3 +1,5 @@
+@import "./font.css";
+
 .header {
     position: absolute;
 height: 80px;
@@ -15,7 +17,7 @@ height: 52px;
 left: 160px;
 top: 14px;
 
-font-family: 'TeX Gyre Adventor';
+font-family: 'Tex';
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
@@ -40,7 +42,7 @@ height: 28px;
 left: 0px;
 top: 0px;
 
-font-family: 'Roboto';
+font-family: 'Robot';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -57,7 +59,7 @@ height: 28px;
 left: 115px;
 top: 0px;
 
-font-family: 'Roboto';
+font-family: 'Robot';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -74,7 +76,7 @@ height: 28px;
 left: 252px;
 top: 0px;
 
-font-family: 'Roboto';
+font-family: 'Robot';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

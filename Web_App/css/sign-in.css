@@ -1,0 +1,22 @@
+.body {
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 80px;
+bottom: 0px;
+}
+
+.formulaire {
+    box-sizing: border-box;
+
+position: absolute;
+width: 395.25px;
+height: 504px;
+left: calc(50% - 395.25px/2 - 0.5px);
+top: calc(50% - 504px/2);
+
+
+background: rgba(214, 221, 236, 0.15);
+border: 3px solid #D6DDEC;
+border-radius: 9px;
+}

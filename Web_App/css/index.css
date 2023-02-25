@@ -1,3 +1,4 @@
+@import "./font.css";
 .body {
     position: absolute;
     height: 849px;
@@ -89,7 +90,7 @@ height: 140px;
 left: calc(50% - 255px/2 - 0.5px);
 top: calc(50% - 140px/2);
 
-font-family: 'TeX Gyre Adventor';
+font-family: 'Tex';
 font-style: normal;
 font-weight: 400;
 font-size: 96px;

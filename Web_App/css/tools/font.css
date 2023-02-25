@@ -13,3 +13,8 @@
     src: url(tex-gyre-adventor/texgyreadventor-bold.otf);
     font-weight: bold;
 }
+
+@font-face {
+    font-family: Robot;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
