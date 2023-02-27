@@ -6,7 +6,7 @@
     right: 0%;
     top: 80px;
 
-    background: url(../assets/background/background-index.png);
+    background: #000 url(../assets/background/background-index.png);
 }
 
 .box {
