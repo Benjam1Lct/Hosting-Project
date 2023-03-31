@@ -21,8 +21,24 @@ model.fit(x_train, y_train, epochs=3)
 
 model.summary()
 
-loss, accuracy = model.evaluate(x_test, y_test)
-print(accuracy)
-print(loss)
+model.evaluate(x_test, y_test)
 
-model.save('digits.model')
+model.save("./nn.h5")
+model.save("./neural_net")
+
+new_model = tf.keras.models.load_model("nn.h5")
+
+model.save("./nn_weights.h5")
+
+model.load_weights("nn_weights.h5")
+
+json_string = model.to_json()
+with open("nn_model.json", "w") as f:
+    f.write(json_string)
+
+with open("nn_model.json", "r") as f:
+    loaded_json_string = f.read()
+
+new_model = tf.keras.models.model_from_json(loaded_json_string)
+new_model.summary()
+new_model.evaluate(x_test, y_test, verbose=2)
