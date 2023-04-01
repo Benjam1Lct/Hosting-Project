@@ -17,7 +17,7 @@ model.add(tf.keras.layers.Dense(units=10, activation=tf.nn.softmax))
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(x_train, y_train, epochs=3)
+model.fit(x_train, y_train, epochs=60)
 
 model.summary()
 
@@ -26,11 +26,11 @@ model.evaluate(x_test, y_test)
 model.save("./nn.h5")
 model.save("./neural_net")
 
-new_model = tf.keras.models.load_model("nn.h5")
+"""new_model = tf.keras.models.load_model("nn.h5")"""
 
 model.save("./nn_weights.h5")
 
-model.load_weights("nn_weights.h5")
+"""model.load_weights("nn_weights.h5")
 
 json_string = model.to_json()
 with open("nn_model.json", "w") as f:
@@ -41,4 +41,4 @@ with open("nn_model.json", "r") as f:
 
 new_model = tf.keras.models.model_from_json(loaded_json_string)
 new_model.summary()
-new_model.evaluate(x_test, y_test, verbose=2)
+new_model.evaluate(x_test, y_test, verbose=2)"""
