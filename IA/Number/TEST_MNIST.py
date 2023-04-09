@@ -11,7 +11,7 @@ if __name__ == '__main__':
     x_train = tf.keras.utils.normalize(x_train, axis=1)
     x_test = tf.keras.utils.normalize(x_test, axis=1)
 
-    new_model = tf.keras.models.load_model("../../nn.h5")
+    new_model = tf.keras.models.load_model("nn.h5")
 
     for x in range(1,6):
         filename = f'{x}.png'
