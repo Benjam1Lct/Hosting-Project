@@ -9,17 +9,19 @@ mnist = tf.keras.datasets.mnist
 x_train = tf.keras.utils.normalize(x_train, axis=1)
 x_test = tf.keras.utils.normalize(x_test, axis=1)
 
-new_model = tf.keras.models.load_model("nn.h5")
+model = tf.keras.models.load_model("nn.h5")
 
-new_model.fit(x_train, y_train, epochs=500)
-print()
-print('=================================================================')
-print()
-new_model.evaluate(x_test, y_test)
+history = model.fit(x_train, y_train, epochs=30)
 
-new_model.summary()
+model.summary()
 
-new_model.save("./nn.h5")
-new_model.save("./neural_net")
-new_model.save("./nn_weights.h5")
+model.save("nn.h5")
+model.save("neural_net")
+model.save("nn_weights.h5")
 
+plt.plot(history.epoch, history.history["loss"], 'g', label='Training loss')
+plt.title('Training loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()
