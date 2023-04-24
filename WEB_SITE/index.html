@@ -1,42 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/tools/scrollbar.css">
-    <link rel="stylesheet" href="./css/tools/header.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>SnapOCR</title>
 </head>
 <body>
 
-    <div class="header">
-        <a class="title-header" href="">TITLE</a>
-        <div class="header-link">
-            <a class="content-link" href="./html/content.html">Content</a>
-            <a class="download-link" href="./html/download.html">Download</a>
-            <a class="profil-link" href="./html/sign-in.html">Profil</a>
-        </div>
-        <div class="reseaux">
-            <a class="insta" href="https://www.instagram.com"><img  src="./assets/items/insta.svg" alt="Instagram"></a>
-            <a class="facebook" href="https://facebook.com"><img  src="./assets/items/facebook.svg" alt="Facebook"></a>
-            <a class="twitter" href="https://twitter.com"><img  src="./assets/items/twitter.svg" alt="Twitter"></a>
-        </div>
-    </div>
+    <header>
+        <a href="#" class="logo"><i class="ri-image-edit-fill"></i><span>Logo</span></a>
 
-    <div class="body">
-        
-        <div class="box">
-            
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-            <div class="circle4"></div>
-            <div class="circle5"></div>
-            <a href="./html/download.html" class="title">START</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" >About Us</a></li>
+            <li><a href="#" >Services</a></li>
+            <li><a href="#" >Blog</a></li>
+            <li><a href="#" >Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-    </div> 
-  
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="image">
+                    <img id="img-upload" src="transparent.png">
+                </div>
+                <div class="content">
+                    <div class="icon"><i class="ri-upload-cloud-2-fill"></i></div>
+                    <div class="text">No file chosen, yet!</div>
+                </div>
+                <div id="cancel-btn"><i class="ri-close-line"></i></div>
+                <div class="file-name">File name here</div>
+            </div>
+            <input id="default-btn" type="file" hidden>
+            <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+        </div>
+
+        <img class="illustration" src="illu.svg">
+    </section>
+    
+
+    <script src="header.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
