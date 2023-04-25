@@ -22,7 +22,6 @@
 
 .container .content {
     position: absolute;
-    
     top: 0;
     left: 0;
     width: 58%;
@@ -226,5 +225,33 @@
         background-size: cover;
         background-position: center;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .container .content {
+        display: none;
+    }
+    .container .logreg-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .logreg-box .form-box {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        border-left: none;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: var(--text-color);
     }
 }
