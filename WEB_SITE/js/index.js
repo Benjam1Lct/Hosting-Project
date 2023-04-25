@@ -19,7 +19,7 @@ defaultBtn.addEventListener("change", function(){
             wrapper.classList.add('active');
         }
         cancelBtn.addEventListener("click", function(){
-            img.src = "transparent.png";
+            img.src = "./img/transparent.png";
             wrapper.classList.remove('active');
         })
         reader.readAsDataURL(file);

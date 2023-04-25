@@ -10,10 +10,20 @@
 :root {
     --bg-color: #fff;
     --text-color: #36324B;
-    --main-color: #AC9DFE;
+    --main-color: #B1D7D8ff;
     --secondary-color: #FFD08A;
     --warm-color: #FFB4B4;
     --cold-color: #FDF7C3;
+    --melon: #F6ACABff;
+    --platinum: #D1DCDDff;
+    --seashell: #F9F1EEff;
+    --carolina-blue: #8AB7CBff;
+    --sky-blue: #7CB8CDff;
+    --tea-rose-red: #F9C6C2ff;
+    --carolina-blue-2: #79B3CCff;
+    --silver: #B6A8A2ff;
+    --light-blue: #B1D7D8ff;
+    --peach: #FBC39Bff;
 }
 
 body{
@@ -32,7 +42,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 28px 12%;
-    transition: all .30s ease;
+    transition: all .20s ease;
     background: var(--bg-color);
 }
 
@@ -43,13 +53,13 @@ header{
 
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 35px;
     margin-right: 3px;
 }
 
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -80,27 +90,29 @@ header{
 }
 
 .main a{
-    margin-right: 25px;
+    margin-right: 10px;
     margin-left: 10px;
-    color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .30s ease;
+    padding: 6px 20px;
+    border-radius: 25px;
+    background-color: var(--main-color);
 }
 
 .user {
     display: flex;
     align-items: center;
+    color: var(--text-color);
+}
+
+.user:hover {
+    color: var(--bg-color);
 }
 
 .user i{
-    color: var(--main-color);
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 7px;
-}
-
-.main a:hover{
-    color: var(--main-color);
 }
 
 #menu-icon {
@@ -133,7 +145,7 @@ header{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
+        height: 250px;
         background: var(--main-color);
         display: flex;
         flex-direction: column;
@@ -159,5 +171,14 @@ header{
 
     .navbar.open{
         right: 2%;
+    }
+
+    section .illustration {
+        display: none;
+    }
+
+    section .container {
+        position: relative;
+        left: 30%;
     }
 }
