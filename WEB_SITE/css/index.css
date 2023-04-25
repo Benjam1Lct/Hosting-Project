@@ -133,7 +133,7 @@ section .illustration {
 
 .container #upload-btn {
     color: var(--text-color);
-    border: 3px solid var(--warm-color);
+    border: 3px solid var(--warm-bright-color);
     background-color: var(--bg-color);
     outline: none;
     border-radius: 25px;
@@ -149,7 +149,7 @@ section .illustration {
 }
 
 .container #upload-btn:hover {
-    background: var(--warm-color);
+    background: var(--warm-bright-color);
     color: var(--bg-color);
 }
 
