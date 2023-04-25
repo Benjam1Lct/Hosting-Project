@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Website Icon" type="png" href="img/icon.png">
+    <link rel="Website Icon" type="png" href="img/icon2.png">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -35,7 +35,7 @@
 
     <div class="container">
         <div class="content">
-            <h2 class="icon"><i class="ri-openbase-line"></i>OCR Application</h2>
+            <h2 class="icon"><i class='bx bxl-python' undefined ></i>OCR Application</h2>
             <div class="text-sci">
                 <h2>Welcome!
                     <br>
@@ -51,13 +51,15 @@
             </div>
         </div>
         <div class="logreg-box">
+
             <div class="form-box login">
                 <form action="#">
                     <h2>Sign In</h2>
+
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-envelope' ></i></span>
-                        <input type="email" id="email-input" required>
-                        <label for="email-input">Email</label>
+                        <input type="text" id="email-in" required>
+                        <label for="email">Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
@@ -68,7 +70,7 @@
                         <label><input type="checkbox">Remember me</label>
                         <a href="#">Forgot password?</a>
                     </div>
-                    <button type="submit" class="btn">Sign In</button>
+                    <button type="submit" class="btn" id="btn-in">Sign In</button>
 
                     <div class="login-register">
                         <p>Don't have an account?
@@ -87,24 +89,24 @@
                         <input type="text" required>
                         <label>Name</label>
                     </div>
-
+            
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-envelope' ></i></span>
-                        <input type="email" required>
-                        <label>Email</label>
+                        <input type="text" id="email-up" required>
+                        <label for="email">Email</label>
                     </div>
-
+            
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
                         <input type="password" required>
                         <label>Password</label>
                     </div>
-
+            
                     <div class="remember-forgot">
                         <label><input type="checkbox">I agree to the terms & conditions</label>
                     </div>
-                    <button type="submit" class="btn">Sign Up</button>
-
+                    <button type="submit" class="btn" id="btn-up">Sign Up</button>
+            
                     <div class="login-register">
                         <p>Already have an account?
                             <a href="#" class="login-link">Sign in</a>

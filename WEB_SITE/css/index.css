@@ -7,26 +7,6 @@
     list-style: none;
 }
 
-:root {
-    --bg-color: #fff;
-    --bg-color-dm: #a3a3a3;
-    --text-color: #36324B;
-    --main-color: #B1D7D8ff;
-    --secondary-color: #FBC39Bff;
-    --warm-color: #F6ACABff;
-    --cold-color: #8AB7CBff;
-    --melon: #F6ACABff;
-    --platinum: #D1DCDDff;
-    --seashell: #F9F1EEff;
-    --carolina-blue: #8AB7CBff;
-    --sky-blue: #7CB8CDff;
-    --tea-rose-red: #F9C6C2ff;
-    --carolina-blue-2: #79B3CCff;
-    --silver: #B6A8A2ff;
-    --light-blue: #B1D7D8ff;
-    --peach: #FBC39Bff;
-}
-
 html,body{
     overflow: hidden;
 }

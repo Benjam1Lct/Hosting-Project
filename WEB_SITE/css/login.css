@@ -144,8 +144,7 @@
 }
 
 .input-box input:focus ~ label,
-.input-box input:valid ~ label,
-.input-box input:not(:placeholder-shown) ~ label{
+.input-box input:valid ~ label{
     top: -5px;
 }
 
@@ -185,9 +184,16 @@
     border: none;
     outline: none;
     border-radius: 25px;
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 20px;
+    color: var(--bg-color);
     font-weight: 500;
+    transition: all .30s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--text-color);
+    background: var(--warm-bright-color);
 }
 
 .form-box .login-register {
