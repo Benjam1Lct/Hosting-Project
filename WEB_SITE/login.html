@@ -53,7 +53,7 @@
         <div class="logreg-box">
 
             <div class="form-box login">
-                <form action="#">
+                <form id="form-in" action="#">
                     <h2>Sign In</h2>
 
                     <div class="input-box">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
+                        <input type="password" id="pass-in" required>
                         <label>Password</label>
                     </div>
                     <div class="remember-forgot">
@@ -81,12 +81,12 @@
             </div>
 
             <div class="form-box register">
-                <form action="#">
+                <form id="form-up" action="#">
                     <h2>Sign Up</h2>
                     
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-user'></i></span>
-                        <input type="text" required>
+                        <input type="text" id="name" required>
                         <label>Name</label>
                     </div>
             
@@ -98,7 +98,7 @@
             
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
+                        <input type="password" id="pass-up" required>
                         <label>Password</label>
                     </div>
             
@@ -118,7 +118,7 @@
     </div>
 
     
-
+    <script src="js/data.js" type="module"></script>
     <script src="js/header.js"></script>
     <script src="js/login.js"></script>
 </body>
