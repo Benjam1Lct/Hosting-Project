@@ -232,6 +232,12 @@
     .container .content {
         display: none;
     }
+
+    .container {
+        width: 120vw;
+        left: 37.8%;
+    }
+
     .container .logreg-box {
         position: absolute;
         top: 0;
