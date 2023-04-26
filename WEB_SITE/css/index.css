@@ -9,25 +9,23 @@
 
 html,body{
     overflow: hidden;
-}
-
-html,body,section{
-    display: grid;
     height: 100%;
-    place-items: center;
-    text-align: center;
-
 }
 
 section {
     display: flex;
-    width: 1060px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
     height: 100%;
     overflow: clip;
+    text-align: center;
+    align-items: center;
+    left: 11vw;
 }
 
 section .illustration {
-    position: absolute;
+    position: relative;
     width: 50vw;
     height: 100%;
     top: 100px;
@@ -40,6 +38,7 @@ section .illustration {
     left: 0;
     height: 350px;
     width: 430px;
+    margin-right: 100px;
 }
 
 .container .wrapper {

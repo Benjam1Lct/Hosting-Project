@@ -117,6 +117,10 @@ header{
     margin-right: 7px;
 }
 
+.link-header-signin {
+    display: none;
+}
+
 #menu-icon {
     font-size: 35px;
     color: var(--text-color);
@@ -142,12 +146,16 @@ header{
         display: block;
     }
 
+    .link-header-signin {
+        display: block;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
-        right: -100%;
+        right: -200%;
         width: 270px;
-        height: 250px;
+        height: 255px;
         background: var(--main-color);
         display: flex;
         flex-direction: column;
@@ -181,6 +189,9 @@ header{
 
     section .container {
         position: relative;
-        left: 30%;
+    }
+
+    .main a{
+        display: none;
     }
 }

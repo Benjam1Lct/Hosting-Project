@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
-        if (screen.width < 768){
-            window.location = "mobile.html"
+        if (screen.width > 768){
+            window.location = "index.html"
         }
     </script>
     <link rel="Website Icon" type="png" href="img/icon2.png">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,38 +29,24 @@
             <li><a href="#" >About Us</a></li>
             <li><a href="#" >Services</a></li>
             <li><a href="#" >Blog</a></li>
-            <li class="link-header-signin"><a href="login.html" >Sign in</a></li>
+            <li><a href="#" >Contact</a></li>
         </ul>
 
         <div class="main">
-            <a href="login.html" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
+            
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
 
     <section>
-        <div class="container">
-            <div class="wrapper">
-                <div class="image">
-                    <img id="img-upload" src="img/transparent.png">
-                </div>
-                <div class="content">
-                    <div class="icon"><i class="ri-upload-cloud-2-fill"></i></div>
-                    <div class="text">No file chosen, yet!</div>
-                </div>
-                <div id="cancel-btn"><i class="ri-close-line"></i></div>
-                <div class="file-name">File name here</div>
-            </div>
-            <input id="default-btn" type="file" hidden>
-            <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
-            <button id="upload-btn">Convert</button>
-        </div>
-
         <img class="illustration" src="img/illu3.svg">
+
+        <div class="download-link">
+            <a class="download-link-android" href="#">Android</a>
+        </div>
     </section>
     
 
     <script src="js/header.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>

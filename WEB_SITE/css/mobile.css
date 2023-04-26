@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section .illustration {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 10vh;
+    left: 20px;
+}
+
+.download-link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
