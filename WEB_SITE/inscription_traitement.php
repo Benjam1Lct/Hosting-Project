@@ -15,6 +15,15 @@
 
         if($row == 0)
         {
+            if(strlen($pseudo) <= 100)
+            {
+                if(strlen($email) <= 100)
+                {
+                    if(filter_var($email, FILTER_VALIDATE_EMAIL))
+                    {
 
+                    }else header('Location:inscription.php?reg_err=email');
+                }else header('Location:inscription.php?reg_err=email_length');
+            }else header('Location:inscription.php?reg_err=pseudo_length');
         }else header('Location:inscription.php?reg_err=already');
     }
