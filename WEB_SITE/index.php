@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
         if (screen.width < 768){
-            window.location = "mobile.html"
+            window.location = "mobile.php"
         }
     </script>
     <link rel="Website Icon" type="png" href="img/icon2.png">
@@ -22,18 +22,18 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
+        <a href="index.php" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
 
         <ul class="navbar">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.php" class="active">Home</a></li>
             <li><a href="#" >About Us</a></li>
             <li><a href="#" >Services</a></li>
             <li><a href="#" >Blog</a></li>
-            <li class="link-header-signin"><a href="login.html" >Sign in</a></li>
+            <li class="link-header-signin"><a href="connexion.php" >Sign in</a></li>
         </ul>
 
         <div class="main">
-            <a href="login.html" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
+            <a href="connexion.php" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>

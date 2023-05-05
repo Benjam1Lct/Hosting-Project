@@ -53,17 +53,17 @@
         <div class="logreg-box">
 
             <div class="form-box login">
-                <form id="form-in">
+                <form id="form-in" action="connexion.php" method="post">
                     <h2>Sign In</h2>
 
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-envelope' ></i></span>
-                        <input type="text" id="email-in" required>
-                        <label for="email-in">Email</label>
+                        <input type="text" name="email" id="email" required="required" autocomplete="off">
+                        <label for="email">Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" id="pass-in" required>
+                        <input type="password" name="password" id="password" required="required" autocomplete="off">
                         <label>Password</label>
                     </div>
                     <div class="remember-forgot">
@@ -74,36 +74,7 @@
 
                     <div class="login-register">
                         <p>Don't have an account?
-                            <a href="#" class="register-link">Sign up</a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-
-            <div class="form-box register">
-                <form id="form-up">
-                    <h2>Register</h2>
-            
-                    <div class="input-box">
-                        <span class="icon-input"><i class='bx bxs-envelope' ></i></span>
-                        <input type="text" id="email-up" required>
-                        <label for="email-up">Email</label>
-                    </div>
-            
-                    <div class="input-box">
-                        <span class="icon-input"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" id="pass-up" required>
-                        <label>Password</label>
-                    </div>
-            
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">I agree to the terms & conditions</label>
-                    </div>
-                    <button type="submit" class="btn" id="btn-up">Sign Up</button>
-            
-                    <div class="login-register">
-                        <p>Already have an account?
-                            <a href="#" class="login-link">Sign in</a>
+                            <a href="./inscription.php" class="register-link">Sign up</a>
                         </p>
                     </div>
                 </form>

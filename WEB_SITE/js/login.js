@@ -4,14 +4,6 @@ const registerLink = document.querySelector('.register-link');
 const signInBtn = document.querySelector('#btn-in');
 const signUpBtn = document.querySelector('#btn-up');
 
-registerLink.addEventListener('click', () => {
-    logregBox.classList.add('active');
-});
-
-loginLink.addEventListener('click', () => {
-    logregBox.classList.remove('active');
-});
-
 // Ajouter un événement onclick
 signInBtn.onclick = function(event) {
   // Récupérer la valeur de l'input email

@@ -90,7 +90,7 @@
     transition-delay: 0s;
 }
 
-.logreg-box.active .form-box.register {
+.logreg-box .form-box.register {
     transform: translateX(0);
     transition-delay: .7s;
 }
