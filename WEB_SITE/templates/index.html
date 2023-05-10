@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
         if (screen.width < 768){
-            window.location = "mobile.html"
+            window.location = "{{url_for('mobile')}}"
         }
     </script>
-    <link rel="Website Icon" type="png" href="img/icon2.png">
+    <link rel="Website Icon" type="png" href="{{ url_for('static', filename='img/icon2.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -22,24 +22,24 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
+        <a href="{{url_for('index')}}" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
 
         <ul class="navbar">
-            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="{{url_for('index')}}" class="active">Home</a></li>
             <li><a href="#" >About Us</a></li>
             <li><a href="#" >Services</a></li>
             <li><a href="#" >Blog</a></li>
-            <li class="link-header-signin"><a href="connexion.html" >Sign in</a></li>
+            <li class="link-header-signin"><a href="{{url_for('connexion')}}" >Sign in</a></li>
         </ul>
 
         <div class="main">
-            <a href="connexion.html" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
+            <a href="{{url_for('connexion')}}" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
 
     <section>
-        <form action="/upload">
+        <form method="POST" enctype="multipart/form-data" >
             <div class="container">
             <div class="wrapper">
                 <div class="image">
@@ -52,11 +52,11 @@
                 <div id="cancel-btn"><i class="ri-close-line"></i></div>
                 <div class="file-name">File name here</div>
             </div>
-            <input id="default-btn" type="file" hidden>
-            <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
-            <button id="upload-btn">Convert</button>
-        </div>
-    </form>
+            <input  type="file" name="photo" id="default-btn" type="file" hidden>
+            <button type="button" onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+            <button type="submit" value="Upload" id="upload-btn">Convert</button>
+            </div>
+        </form>
         <img class="illustration" src="{{ url_for('static', filename='img/illu3.svg') }}">
    
         

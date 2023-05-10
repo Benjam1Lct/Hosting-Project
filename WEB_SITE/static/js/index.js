@@ -4,6 +4,9 @@ const cancelBtn = document.querySelector("#cancel-btn");
 const defaultBtn = document.querySelector("#default-btn");
 const customBtn = document.querySelector("#custom-btn");
 const img = document.querySelector("#img-upload");
+const fileInput = document.querySelector('input[type="file"]');
+const submitButton = document.querySelector('button[type="submit"]');
+
 let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_]+$/;
 
 function defaultBtnActive(){
@@ -19,7 +22,7 @@ defaultBtn.addEventListener("change", function(){
             wrapper.classList.add('active');
         }
         cancelBtn.addEventListener("click", function(){
-            img.src = "./img/transparent.png";
+            img.src = "/static/img/transparent.png";
             wrapper.classList.remove('active');
         })
         reader.readAsDataURL(file);
@@ -29,3 +32,9 @@ defaultBtn.addEventListener("change", function(){
         fileName.textContent = valueStore;
     }
 });
+
+submitButton.addEventListener('click', (event) => {
+    if (fileInput.value === '') {
+      event.preventDefault();
+    }
+  });
