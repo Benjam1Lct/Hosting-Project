@@ -9,7 +9,7 @@
             window.location = "{{url_for('mobile')}}"
         }
     </script>
-    <link rel="Website Icon" type="png" href="{{ url_for('static', filename='img/icon2.png') }}">
+    <link rel="Website Icon" type="png" href="{{ url_for('static', filename='img/icon4.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -20,15 +20,14 @@
     <title>SnapOCR</title>
 </head>
 <body>
-
     <header>
         <a href="{{url_for('index')}}" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
 
         <ul class="navbar">
             <li><a href="{{url_for('index')}}" class="active">Home</a></li>
-            <li><a href="#" >About Us</a></li>
-            <li><a href="#" >Services</a></li>
-            <li><a href="#" >Blog</a></li>
+            <li><a href="{{url_for('about_us')}}" >About Us</a></li>
+            <li><a href="{{url_for('services')}}" >Services</a></li>
+            <li><a href="{{url_for('blog')}}" >Blog</a></li>
             <li class="link-header-signin"><a href="{{url_for('connexion')}}" >Sign in</a></li>
         </ul>
 
@@ -39,30 +38,37 @@
     </header>
 
     <section>
+        <div class="form-with-text">
+          <span id="typed-text"></span>
         <form method="POST" enctype="multipart/form-data" >
             <div class="container">
             <div class="wrapper">
                 <div class="image">
                     <img id="img-upload" src="{{ url_for('static', filename='img/transparent.png') }}">
                 </div>
-                <div class="content">
-                    <div class="icon"><i class="ri-upload-cloud-2-fill"></i></div>
+                <div id="page" class="content">
+                    <div class="icon"><i class='bx bx-images' ></i></div>
                     <div class="text">No file chosen, yet!</div>
                 </div>
                 <div id="cancel-btn"><i class="ri-close-line"></i></div>
                 <div class="file-name">File name here</div>
             </div>
             <input  type="file" name="photo" id="default-btn" type="file" hidden>
-            <button type="button" onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
-            <button type="submit" value="Upload" id="upload-btn">Convert</button>
+            <div class="button_convert">
+               <button type="button" onclick="defaultBtnActive()" id="custom-btn"><i class='bx bxs-cloud-upload'></i></button>
+                <button type="submit" value="Upload" id="upload-btn" onclick="showLoader()">Extract</button> 
             </div>
-        </form>
-        <img class="illustration" src="{{ url_for('static', filename='img/illu3.svg') }}">
+            
+            </div>
+        </form>  
+        </div>
+        
+        <img class="illustration" src="{{ url_for('static', filename='img/illu6.png') }}">
    
         
     </section>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
     <script src="{{ url_for('static', filename='js/header.js') }}"></script>
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>

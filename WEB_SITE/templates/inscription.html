@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Website Icon" type="image/png" href="{{ url_for('static', filename='img/icon2.png') }}">
+    <link rel="Website Icon" type="image/png" href="{{ url_for('static', filename='img/icon3.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -20,10 +20,10 @@
         <a href="{{url_for('index')}}" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
 
         <ul class="navbar">
-            <li><a href="{{url_for('index')}}" class="active">Home</a></li>
-            <li><a href="#" >About Us</a></li>
-            <li><a href="#" >Services</a></li>
-            <li><a href="#" >Blog</a></li>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('about_us')}}" >About Us</a></li>
+            <li><a href="{{url_for('services')}}" >Services</a></li>
+            <li><a href="{{url_for('blog')}}" >Blog</a></li>
             <li class="link-header-signin"><a href="{{url_for('connexion')}}" >Sign in</a></li>
         </ul>
 

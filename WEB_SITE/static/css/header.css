@@ -11,11 +11,11 @@
     --bg-color: #fff;
     --bg-color-dm: #969696;
     --text-color: #323d4b;
-    --main-color: #79B3CCff;
-    --secondary-color: #FFD08A;
-    --warm-color: #e09797;
-    --warm-bright-color: #ebb2b2;
-    --cold-color: #FDF7C3;
+    --main-color: #4042e2;
+    --secondary-color: #f5b24e;
+    --warm-color: #db5c4b;
+    --warm-bright-color: #ff8682;
+    --cold-color: #fcea4e;
     --melon: #F6ACABff;
     --platinum: #D1DCDDff;
     --seashell: #F9F1EEff;
@@ -28,10 +28,18 @@
     --peach: #FBC39Bff;
 }
 
+html{
+    background-color: rgb(178, 190, 255);
+    backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
+}
+
 body{
     min-height: 100vh;
-    background-color: var(--bg-color);
-    color: var(--text-color)
+    background-color: rgba(255, 255, 255, 0.842); /* Couleur de fond avec opacité */
+    color: var(--text-color);
+    scale: 0.96;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 header{
@@ -45,7 +53,6 @@ header{
     justify-content: space-between;
     padding: 28px 12%;
     transition: all .20s ease;
-    background: var(--bg-color);
 }
 
 .logo{
@@ -84,6 +91,7 @@ header{
 
 .navbar a.active{
     color: var(--main-color);
+    border-bottom: 2px solid var(--text-color);
 }
 
 .main {
@@ -105,11 +113,13 @@ header{
 .user {
     display: flex;
     align-items: center;
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .user:hover {
-    color: var(--bg-color);
+    color: var(--text-color);
+    background-color: transparent;
+    outline: 3px solid var(--main-color);
 }
 
 .user i{

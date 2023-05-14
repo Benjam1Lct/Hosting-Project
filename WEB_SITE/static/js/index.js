@@ -1,3 +1,11 @@
+const typedText = new Typed('#typed-text', {
+    strings: ['Extract text from image',' Discover your prediciton', 'Complet your documents'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true,
+    startDelay: 500,
+    backDelay: 3000
+  });
 const wrapper = document.querySelector(".wrapper");
 const fileName = document.querySelector(".file-name");
 const cancelBtn = document.querySelector("#cancel-btn");
@@ -22,7 +30,8 @@ defaultBtn.addEventListener("change", function(){
             wrapper.classList.add('active');
         }
         cancelBtn.addEventListener("click", function(){
-            img.src = "/static/img/transparent.png";
+            img.src = "./static/img/transparent.png";
+            fileInput.value = null;
             wrapper.classList.remove('active');
         })
         reader.readAsDataURL(file);
@@ -38,3 +47,10 @@ submitButton.addEventListener('click', (event) => {
       event.preventDefault();
     }
   });
+
+function showLoader() {
+    // Masquer la page
+    document.getElementById('page').style.display = 'none';
+    // Afficher le loader
+    img.src = "./static/img/4loader.gif";
+}

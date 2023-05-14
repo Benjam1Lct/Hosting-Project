@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="{{ url_for('static', filename='img/icon3.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>SnapOCR</title>
+</head>
+<body>
+
+    <header>
+        <a href="{{url_for('index')}}" class="logo"><i class='bx bxs-image-add' ></i><span>SnapOCR</span></a>
+
+        <ul class="navbar">
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('about_us')}}" >About Us</a></li>
+            <li><a href="{{url_for('services')}}" class="active">Services</a></li>
+            <li><a href="{{url_for('blog')}}" >Blog</a></li>
+            <li class="link-header-signin"><a href="{{url_for('connexion')}}" >Sign in</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="{{url_for('connexion')}}" class="user"><i class='bx bxs-contact' ></i>Sign In</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section>
+        
+    </section>
+
+
+    
+
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

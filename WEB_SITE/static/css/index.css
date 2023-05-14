@@ -24,13 +24,36 @@ section {
     left: 11vw;
 }
 
+.form-with-text {
+    display: block;
+    width: auto;
+    height: auto;
+    transform: translateY(-30px);
+}
+
+.form-with-text span {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    transform: translate(-12px, -35px);
+    display: inline-block;
+    scale: 1;
+}
+
+.form-with-text .bxs-file-find {
+    display: inline-block;
+    transform: translateY(2px);
+}
+
 section .illustration {
     position: relative;
-    width: 50vw;
-    height: 100%;
-    top: 100px;
-    right: 0px;
+    width: 100vw;
+    height: auto;
+    top: 20px;
+    right: 80px;
     overflow: hidden;
+    scale: 1.1;
 }
 
 .container {
@@ -82,7 +105,7 @@ section .illustration {
 
 .wrapper #cancel-btn {
     position: absolute;
-    right: 12px;
+    right: 30px;
     top: 12px;
     font-size: 30px;
     cursor: pointer;
@@ -115,7 +138,7 @@ section .illustration {
 
 .container #custom-btn {
     margin-top: 20px;
-    width: 100%;
+    width: 60px;
     height: 50px;
     display: block;
     border: none;
@@ -128,6 +151,14 @@ section .illustration {
     text-transform: uppercase;
     cursor: pointer;
     background: var(--main-color);
+    margin-right: 5px;
+}
+.container #custom-btn i{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .container #upload-btn {
@@ -136,10 +167,10 @@ section .illustration {
     background-color: var(--bg-color);
     outline: none;
     border-radius: 25px;
-    width: 50%;
+    width: 100%;
     height: 50px;
-    margin-top: 15px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -152,3 +183,30 @@ section .illustration {
     color: var(--bg-color);
 }
 
+.button_convert {
+    display: flex;
+}
+
+@media (max-width: 1380px) {
+    .form-with-text {
+        display: block;
+        width: auto;
+        height: auto;
+        transform: translateY(0px);
+    }
+    
+    .form-with-text p {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 30px;
+        display: none;
+    }
+
+    .form-with-text .bxs-file-find {
+        display: none;
+    }
+    section .illustration {
+        scale: 1.5;
+        right: -5vw;
+    }
+}
