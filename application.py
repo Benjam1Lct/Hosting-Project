@@ -3,19 +3,18 @@ import os
 import shutil
 from flask import Flask, render_template, request, redirect, url_for
 from flask_uploads import UploadSet, configure_uploads, IMAGES
-from werkzeug.utils import secure_filename
 
 keras_pipeline = pipeline.Pipeline()
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+application = Flask(__name__, template_folder='templates', static_folder='static')
 
-app.config['UPLOADED_PHOTOS_DEST'] = 'uploads'
+application.config['UPLOADED_PHOTOS_DEST'] = 'uploads'
 photos = UploadSet('photos', IMAGES)
-configure_uploads(app, photos)
+configure_uploads(application, photos)
 
-@app.route('/', methods=['GET', 'POST'])
+@application.route('/', methods=['GET', 'POST'])
 def index():
-    folder_path_del = "D:/NSI-Projet/FinalProject_NSI-1/WEB_SITE/static/uploads"
+    folder_path_del = "./static/uploads"
     file_list = os.listdir(folder_path_del)
     for file_name in file_list:
         file_path = os.path.join(folder_path_del, file_name)
@@ -36,7 +35,7 @@ def index():
             ocr_text += text + " "
         print(ocr_text)
         src_file = full_path
-        dst_folder = 'D:/NSI-Projet/FinalProject_NSI-1/WEB_SITE/static/uploads'
+        dst_folder = './static/uploads'
         shutil.move(src_file, dst_folder)
         directory = 'uploads'
         if os.path.exists(directory):
@@ -44,7 +43,7 @@ def index():
             print(f"Le dossier {directory} a été supprimé avec succès")
         else:
             print(f"Le dossier {directory} n'existe pas")
-        folder_path_name = 'D:/NSI-Projet/FinalProject_NSI-1/WEB_SITE/static/uploads'
+        folder_path_name = './static/uploads'
         files_name = os.listdir(folder_path_name)
         latest_file_name = None
         for file_name in files_name:
@@ -53,37 +52,37 @@ def index():
         return render_template('render.html', ocr_text=ocr_text, name=latest_file_name)
     return render_template('index.html')
 
-@app.route('/renderTest')
+@application.route('/renderTest')
 def render():
     ocr_text = 'lorem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consecteturem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consecteturem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consecteturem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consecteturem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consecteturem ipsum dolor sit amet, consectetur adipiscing,lorem ipsum dolor sit amet, consectetur adipiscinglorem ipsum dolor sit amet, consectetur adiis '
     full_path = 'telechargement.png'
     return render_template('render.html', ocr_text=ocr_text, name=full_path)
 
-@app.route('/connexion')
+@application.route('/connexion')
 def connexion():
     
     return render_template('connexion.html')
 
-@app.route('/inscription')
+@application.route('/inscription')
 def inscription():
     return render_template('inscription.html')
 
-@app.route('/mobile')
+@application.route('/mobile')
 def mobile():
     return render_template('mobile.html')
 
-@app.route('/blog')
+@application.route('/blog')
 def blog():
     return render_template('blog.html')
 
-@app.route('/about_us')
+@application.route('/about_us')
 def about_us():
     return render_template('about_us.html')
 
-@app.route('/services')
+@application.route('/services')
 def services():
     return render_template('services.html')
 
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+    application.run(host='0.0.0.0', port=80, debug=True)
